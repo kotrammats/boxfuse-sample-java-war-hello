@@ -1,13 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.boxfuse.samples</groupId>
-    <artifactId>hello</artifactId>
+    <groupId>com.kotramma</groupId>
+    <artifactId>amazon</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
     <name>hello</name>
     <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
-    <dependencies>
+<properties>
+         <sonar.host.url>http://13.233.23.179:9000//</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>admin1</sonar.password>
+</properties>
+          <distributionManagement>
+          <repository>
+                  <id>nexus-server</id>
+                  <url>http://13.232.195.10:8081/repository/KTS-RELEASE/</url>
+        </repository>
+        <snapshotRepository>
+                <id>nexus-server</id>
+                <url>http://13.232.195.10:8081/repository/KTS-SNAPSHOT/</url>
+        </snapshotRepository>
+</distributionManagement>
+         <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
