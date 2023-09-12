@@ -4,9 +4,18 @@
     <groupId>com.kotramma</groupId>
     <artifactId>amazon</artifactId>
     <packaging>war</packaging>
-    <version>1.0-RELEASE</version>
+    <version>1.0</version>
     <name>hello</name>
     <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
+
+         <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 <properties>
          <sonar.host.url>http://3.109.152.224:9000/</sonar.host.url>
         <sonar.login>admin</sonar.login>
@@ -22,14 +31,7 @@
                 <url>http://13.235.73.225:8081/repository/KTS-SNAPSHOT/</url>
         </snapshotRepository>
 </distributionManagement>
-         <dependencies>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+         
     <build>
         <plugins>
             <plugin>
