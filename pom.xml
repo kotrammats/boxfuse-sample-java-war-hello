@@ -8,18 +8,18 @@
     <name>hello</name>
     <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
 <properties>
-         <sonar.host.url>http://13.233.23.179:9000//</sonar.host.url>
+         <sonar.host.url>http://3.109.152.224:9000/</sonar.host.url>
         <sonar.login>admin</sonar.login>
         <sonar.password>admin1</sonar.password>
 </properties>
           <distributionManagement>
           <repository>
                   <id>nexus-server</id>
-                  <url>http://13.232.195.10:8081/repository/KTS-RELEASE/</url>
+                  <url>http://13.235.73.225:8081/repository/KTS-RELEASE/</url>
         </repository>
         <snapshotRepository>
                 <id>nexus-server</id>
-                <url>http://13.232.195.10:8081/repository/KTS-SNAPSHOT/</url>
+                <url>http://13.235.73.225:8081/repository/KTS-SNAPSHOT/</url>
         </snapshotRepository>
 </distributionManagement>
          <dependencies>
