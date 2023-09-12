@@ -18,8 +18,7 @@
 </dependencies>
 <properties>
          <sonar.host.url>http://43.204.25.33:9000/</sonar.host.url>
-        <sonar.login>admin</sonar.login>
-        <sonar.password>admin1</sonar.password>
+        <sonar.login>sqa_d0e9448bc599f07cdc981fbae494a5da6813b38b</sonar.login>
 </properties>
 <distributionManagement>
          <repository>
